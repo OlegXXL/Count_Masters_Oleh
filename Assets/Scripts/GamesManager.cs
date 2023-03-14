@@ -13,6 +13,7 @@ public class GamesManager : MonoBehaviour
     [SerializeField] private GameObject loseGameUI;
     [SerializeField] private GameObject winGameUI;
     [SerializeField] private Button restartGame_btn;
+    [SerializeField] private GameObject CountPeopole_t;
 
     private void Awake()
     {
@@ -22,6 +23,7 @@ public class GamesManager : MonoBehaviour
     {
         menuUI.SetActive(false);
         playerManager.onGameState();
+        CountPeopole_t.SetActive(true);
     }
     public void LoseGame()
     {

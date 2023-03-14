@@ -89,6 +89,10 @@ public class PlayerManager : MonoBehaviour
         }
 
     }
+    public int PeopleCount()
+    {
+        return numberOfStickmans;
+    }
     public void ChangeMembers()
     {
         numberOfStickmans -= 1;
