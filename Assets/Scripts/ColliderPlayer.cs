@@ -7,9 +7,10 @@ public class ColliderPlayer : MonoBehaviour
 {
     [SerializeField] PlayerManager playerManager;
     private int numberOfStickmans = 1;
+    [SerializeField] private TextMeshPro CounterTxt;
     private void OnTriggerEnter(Collider other)
     {
-
+        numberOfStickmans = playerManager.PeopleCount();
         if (other.CompareTag("Gate"))
         {
             Debug.Log("Gate Trigger");
@@ -37,7 +38,7 @@ public class ColliderPlayer : MonoBehaviour
             transform.gameObject.SetActive(false) ;
             playerManager.ChangeMembers();
         }
-
+        CounterTxt.text = numberOfStickmans.ToString();
     }
 
 }

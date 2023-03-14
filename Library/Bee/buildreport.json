@@ -1,0 +1,20 @@
+{
+"instructions_readme": "1) Open Chrome, 2) go to chrome://tracing, 3) click Load, 4) navigate to this file.",
+
+"traceEvents":[
+{ "pid": "Unity", "ph":"M", "name": "process_name", "args": {"name": "Unity"} },
+{ "pid": "Unity", "ph":"M", "name": "process_sort_index", "args": {"sort_index": -100} },
+{ "pid": "Unity", "tid": 1, "ph":"M", "name": "thread_name", "args": {"name": ""} },
+{ "pid": "Unity", "tid": 1,"ts": 1.67881570294296E+15,"dur": 7134824, "ph":"X", "name": "Build player"},
+{ "pid": "Unity", "tid": 1,"ts": 1.67881570294517E+15,"dur": 27410, "ph":"X", "name": "Preprocess Player"},
+{ "pid": "Unity", "tid": 1,"ts": 1.67881570317364E+15,"dur": 6865495, "ph":"X", "name": "Prepare For Build"},
+{}
+
+],
+"meta_datetime": "03/14/2023 19:41:50",
+"meta_command_line": "D:\\Unity\\Editor\\Unity.exe -projectpath \"D:\\Unity\\Count Master\\Count_Masters_Oleh\" -useHub -hubIPC -cloudEnvironment production -licensingIpc LicenseClient-Oleh -hubSessionId c7b0e7b0-c1e3-11ed-bba6-454612a747a8 -accessToken rL-nmscmovZC3MHdhNCcXf-fMpqeI8IVmy-Hxb87R-E007f",
+"meta_command_line_args": "D:\\Unity\\Editor\\Unity.exe -projectpath D:\\Unity\\Count Master\\Count_Masters_Oleh -useHub -hubIPC -cloudEnvironment production -licensingIpc LicenseClient-Oleh -hubSessionId c7b0e7b0-c1e3-11ed-bba6-454612a747a8 -accessToken rL-nmscmovZC3MHdhNCcXf-fMpqeI8IVmy-Hxb87R-E007f",
+"meta_user_name": "Oleh",
+"meta_os_version": "Microsoft Windows NT 10.0.19045.0",
+"meta_cpu_count": "12"
+}
